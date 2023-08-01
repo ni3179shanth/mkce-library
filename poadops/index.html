@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify-Email</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(./book-library-with-open-textbook.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            margin-top: 20%;
+            font-size: 6vw; 
+            color: white;
+            border: transparent;
+        }
+
+        .kr-image {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 20%; 
+            height: 20%; 
+            opacity: 0.4;
+            border-radius: 30px;
+            
+        }
+
+        .mk-image{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 40%; 
+            height: 20%; 
+            opacity: 0.4;
+            border-radius: 15px;
+
+        }
+
+
+        .gmail {
+            color: white;
+            font-size: 2vw;   
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 10vw; 
+            }
+            .gmail {
+                font-size: 1.5vw;
+            }
+            button {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+                margin-top: 35px;
+            }
+        }
+        button{
+            width: 200px;
+            height: 100px;
+            font-size: 40px;
+            color:black;
+            margin-top: 85px;
+            margin-right: -95px;
+            background-color: transparent;
+            border:- 20px;
+            cursor: pointer;
+        }
+        button:hover{
+            transition: 0.2s;
+        }
+        button:active{
+            background-color: white;
+            opacity: 0.3;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>THE MKCE-LIBRARY</h1>
+    <img class="kr-image" src="./kr.png" alt="Image description">
+    <img class="mk-image" src="./mk.png" alt="Image description">
+    <p class="gmail">Mail: geninishanth@gmail.com</p>
+    <button id="loginButton">LOGIN >></button>
+    <script>
+        
+        const loginButton = document.getElementById("loginButton");
+
+        loginButton.addEventListener("click", function() {
+            
+            window.location.href = "user.html";
+        });
+    </script>
+</body>
+
+</html>
